@@ -21,5 +21,6 @@ class Customer
 
   def meals
     Meal.all.select { |meal| customer == self}
+  end
 
 end
