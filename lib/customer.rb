@@ -19,4 +19,7 @@ class Customer
     @waiter = self
   end
 
+  def meals
+    Meal.all.select { |meal| customer == self}
+
 end
